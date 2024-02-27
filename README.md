@@ -1,7 +1,7 @@
 # Using-ML-for-Predicting-Survivors---The-Case-of-the-Titanic-Disaster
 This repository contains model(s) for predicting survivors in the titanic disaster of 1912. This project is a submission to the Kaggle "Getting Started with Prediction" Competition. As part of the competition, competitors are required to use machine learning to create a model that predicts which passengers survived the Titanic shipwreck. The resulting prediction models are scored based on their accuracy. However, this project uses a few model types and checks for the accuracy scores across the board.
 
-## Model(s) Used
+## Model(s) Used With Accuracy Score
 - XGBoost
 - Random Forest Classifier
 - Gradient Boosting
