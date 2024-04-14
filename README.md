@@ -9,15 +9,20 @@ It is worthy to note that the train-test-split method does not need to be import
 
 [Pandas](https://pandas.pydata.org/) and [NumPy](https://numpy.org/) are imported for Data Manipulation and Wrangling. The Machine Learning Models are imported from [Scikit-Learn](https://scikit-learn.org/). Each model's prediction is then saved as a .pkl file using the Pickle module. 
 
-## Summary of Classification Process
-Several Machine Learning Models were used to predict the survivors of the titanic shipwreck. The models used are suitable to be used for binary classification, i.e., predicting the probability of an observation belonging to one of two possible classes. In the case of the Titanic Shipwreck, the models predicts the probability of a passenger either surviving or not. 
-
-The code script shows the steps taken in training Machine Learning Models for making predictions of survival for passengers in the Titanic Shipwreck of 1912. The script shows how to do exploratory data analysis (EDA) and pre-processing the data for the model. It shows how to identify datatypes, make appropriate conversions, drop features that have excessive missing values and for those observations with few missing values, it shows how impute values for the missing observations called "NaNs." The code script also shows how to create dummies for categorical variables in the dataset while also dropping the original columns.
-
-Finally, it also shows how to train Machine Learning models using a training dataset, how to use the trained model on test datasets and making predictions on the test dataset, dump the trained model into a pickle file, and save these predictions to a desired file format file (in this case, a comma separated value - csv file).
+## Chronology 
+- Import necessary libraries and datasets.
+- Identify datatypes and make appropriate conversions.
+- Preprocess dataset - deal with missing values and labels in numeric and categorical features respectively.
+- Split data into the features and target.
+- Training machine learning models on training dataset and check training accuracy. 
+- Use trained model on test dataset and make prediction.
+- Save predictions to a desired file format file (in this case, a comma separated value - csv file). 
+- Dump the model into a pickle file and 
 
 ## Model Results
-**Logistic Regression Model** : The [Logistic Regression Model](https://github.com/jibbs1703/Predicting-Titanic-Survivors/blob/main/Titanic_Survival_Prediction_Logistic_Regression.ipynb) yielded an accuracy of 80% with used on the test data, predicting that 36% of the passengers in the Test Dataset survived the shipwreck while 64% did not survive. The Kaggle submission for this model returned a 76.94% accuracy score. 
+**Logistic Regression Model** : The Logistic Regression Model yielded an accuracy of 80% with used on the test data, predicting that 36% of the passengers in the Test Dataset survived the shipwreck while 64% did not survive. The Kaggle submission for this model returned a 76.94% accuracy score. 
+
+**Logistic Regression Cross Validation Model** : The Logistic Regression Cross Validation Model yielded an accuracy of 81% with used on the test data, predicting that 37% of the passengers in the Test Dataset survived the shipwreck while 63% did not survive. The Kaggle submission for this model returned a 77.51% accuracy score.
 
 ## Author(s)
 - [**Abraham Ajibade**](https://www.linkedin.com/in/abraham-ajibade-759772117)
