@@ -1,5 +1,6 @@
 # Predicting-Titanic-Survivors
-This repository contains a model for predicting the survivors of the titanic disaster of 1912. The project results were submitted to the Kaggle "Getting Started with Prediction" Competition. As part of the competition, competitors are required to use machine learning model(s) of their choice in predicting which passengers survived the Titanic shipwreck of 1912. The resulting prediction models are then scored, based on their accuracy.
+## Project Overview
+This repository contains models for predicting the survivors of the titanic shipwreck disaster of 1912. The model results were submitted to the Kaggle "Getting Started with Prediction" Competition. As part of the competition, competitors are required to use machine learning model(s) of their choice in predicting which passengers survived the Titanic shipwreck of 1912. The resulting prediction models are then scored, based on their accuracy.
 
 ## Dataset For Analysis
 The dataset used for this ML project was obtained from [Kaggle](https://www.kaggle.com/competitions/titanic) and has been split into test and train sections. The train data (train.csv) which contains 891 observations is used to model the predictions of survival and subsequently used on the test data (test.csv) which contains 418 observations. The titanic data contains passenger information like Name, Sex, Age, Passenger Class (1st, 2nd or 3rd), Number of Siblings/Spouses Aboard, Number of Parents/Children Aboard, Ticket Number, Passenger Fare (in British pound), Cabin, and the Port of Embarkation (Cherbourg, Queenstown or Southampton). Based on these features, the passengers either survive or not surviive after the shipwreck. 
@@ -14,15 +15,18 @@ It is worthy to note that the train-test-split method does not need to be import
 - Identify datatypes and make appropriate conversions.
 - Preprocess dataset - deal with missing values and labels in numeric and categorical features respectively.
 - Split data into the features and target.
-- Training machine learning models on training dataset and check training accuracy. 
+- Training machine learning models on training dataset and check training accuracy.
+- Tune Hyperparameters of the model (if necessary) as the default settings sometimes yield the best performance for the model.
 - Use trained model on test dataset and make prediction.
 - Save predictions to a desired file format file (in this case, a comma separated value - csv file). 
-- Dump the model into a pickle file and 
+- Save the model by dumping into a pickle file. 
 
 ## Model Results
-**Logistic Regression Model** : The Logistic Regression Model yielded an accuracy of 80% with used on the test data, predicting that 36% of the passengers in the Test Dataset survived the shipwreck while 64% did not survive. The Kaggle submission for this model returned a 76.94% accuracy score. 
+**Logistic Regression Model** : The Logistic Regression Model yielded an accuracy of 80% with the training data. The model predicted that 36% of the passengers in the Test Dataset survived the shipwreck while 64% did not survive. The Kaggle submission for this model returned a 76.94% accuracy score. 
 
-**Logistic Regression Cross Validation Model** : The Logistic Regression Cross Validation Model yielded an accuracy of 81% with used on the test data, predicting that 37% of the passengers in the Test Dataset survived the shipwreck while 63% did not survive. The Kaggle submission for this model returned a 77.51% accuracy score.
+**Logistic Regression Cross Validation Model** : The Logistic Regression Cross Validation Model yielded an accuracy of 81% with the training data. The model predicted that 37% of the passengers in the Test Dataset survived the shipwreck while 63% did not survive. The Kaggle submission for this model returned a 77.51% accuracy score.
+
+**Decision Tree Classifier** : The Decision Tree Classifier Model yielded an accuracy of 84% with the training data. The model predicted that 35% of the passengers in the Test Dataset survived the shipwreck while 65% did not survive. The Kaggle submission for this model returned a 78.95% accuracy score.
 
 ## Author(s)
 - [**Abraham Ajibade**](https://www.linkedin.com/in/abraham-ajibade-759772117)
