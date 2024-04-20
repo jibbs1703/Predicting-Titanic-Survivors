@@ -18,8 +18,10 @@ It is worthy to note that the train-test-split method does not need to be import
 - Training machine learning models on training dataset and check training accuracy.
 - Tune Hyperparameters of the model (if necessary) as the default settings sometimes yield the best performance for the model.
 - Use trained model on test dataset and make prediction.
-- Save predictions to a desired file format file (in this case, a comma separated value - csv file). 
-- Save the model by dumping into a pickle file. 
+- Save predictions to a desired file format. 
+- Save the model by dumping into a pickle file.
+- Check the most important features for best model. 
+- Create a simple web page where users can get a titanic survival prediction based on features. 
 
 ## Model Results
 **Logistic Regression Model** : The Logistic Regression Model yielded an accuracy of 80% with the training data. The model predicted that 36% of the passengers in the Test Dataset survived the shipwreck while 64% did not survive. The Kaggle submission for this model returned a 76.94% accuracy score. 
@@ -27,6 +29,13 @@ It is worthy to note that the train-test-split method does not need to be import
 **Logistic Regression Cross Validation Model** : The Logistic Regression Cross Validation Model yielded an accuracy of 81% with the training data. The model predicted that 37% of the passengers in the Test Dataset survived the shipwreck while 63% did not survive. The Kaggle submission for this model returned a 77.51% accuracy score.
 
 **Decision Tree Classifier** : The Decision Tree Classifier Model yielded an accuracy of 84% with the training data. The model predicted that 35% of the passengers in the Test Dataset survived the shipwreck while 65% did not survive. The Kaggle submission for this model returned a 78.95% accuracy score.
+
+**Random Forest Classifier** : The Random Forest Classifier Tree Model yielded an accuracy of 90% with the training data. The model predicted that 35% of the passengers in the Test Dataset survived the shipwreck while 65% did not survive. However, the Kaggle submission for this model returned a 77.27% accuracy score.
+
+## Using Best Model for Simple Web Application Deployment 
+Of all four models deployed on the Titanic Shipwreck dataset, the Decision Tree Classifier performed best with some hyperparameter tuning. The model identifies Sex, Fare paid for the Trip and the Passenger Cabin Class as the most important determinants of survival, while the Point of Embarkment and Ticket Type were the least important determinants of survival. 
+
+The model was then used to train the dataset in preparation for its deployment as a simple web application. The web application was deployed as a single landing page using [Streamlit](https://streamlit.io/). Users are able to toggle between several dataset features to predict their survival category, whether they "Survived" or "Did not Make it".
 
 ## Author(s)
 - [**Abraham Ajibade**](https://www.linkedin.com/in/abraham-ajibade-759772117)
